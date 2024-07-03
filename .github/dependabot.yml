@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: "terraform"
+    directories:
+      - "*"
+    schedule:
+      interval: "weekly"
+    labels: ["dependencies"]
+    reviewers:
+      - "bergfreunde/bf-luca"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gha-devops:
+        patterns:
+          - "*"
